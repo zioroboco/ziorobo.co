@@ -1,0 +1,15 @@
+*
+
+# Whitelist...
+!**/
+!*.ts
+!*.js
+!*.json
+!*.yaml
+!*.css
+!*.html
+!*.svelte
+
+# Explicitly ignore...
+**/build/
+**/node_modules/

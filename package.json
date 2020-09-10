@@ -4,9 +4,46 @@
     "node": "^14.5"
   },
   "scripts": {
+    "build": "webpack --env.production",
+    "start": "webpack-dev-server",
+    "tsc:src": "tsc -p ./src/tsconfig.json --noEmit",
+    "tsc:node": "tsc -p ./tsconfig.json --noEmit",
+    "lint": "yarn -s tsc:src && yarn -s tsc:node && eslint . --ext .ts --fix && prettier --write '**/*'",
+    "lint-ci": "yarn -s tsc:src && yarn -s tsc:node && eslint . --ext .ts && prettier --check '**/*'"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@tsconfig/svelte": "^1.0.10",
+    "@types/html-webpack-plugin": "*",
+    "@types/node": "*",
+    "@types/webpack-dev-server": "*",
+    "@types/webpack-env": "*",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/parser": "^4.0.1",
+    "autoprefixer": "^9.8.6",
+    "css-loader": "^4.2.1",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-only-warn": "^1.0.2",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.5.0",
+    "html-webpack-plugin": "^4.3.0",
+    "postcss-cli": "^7.1.1",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^2.0.5",
+    "style-loader": "^1.2.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "svelte": "^3.24.1",
+    "svelte-check": "^1.0.20",
+    "svelte-loader": "^2.13.6",
+    "svelte-preprocess": "^4.1.1",
+    "tailwindcss": "^1.7.3",
+    "ts-loader": "^8.0.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2",
+    "webpack": "^5.0.0-beta.29",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }

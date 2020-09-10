@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "lib": ["esnext", "dom"],
+    "module": "esnext",
+    "target": "es2019",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "sourceMap": true
+  },
+  "include": ["./**/*"]
+}

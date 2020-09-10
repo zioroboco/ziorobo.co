@@ -1,0 +1,9 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "javascript.suggestionActions.enabled": false,
+  "css.validate": false,
+  "eslint.options": { "plugins": ["only-warn"] },
+  "editor.codeActionsOnSave": { "source.fixAll": true },
+  "svelte.plugin.css.enable": false,
+  "editor.formatOnSave": true
+}

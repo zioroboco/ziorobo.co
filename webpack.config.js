@@ -3,7 +3,7 @@ const WebpackModules = require("webpack-modules")
 const path = require("path")
 const config = require("sapper/config/webpack.js")
 const pkg = require("./package.json")
-const { mdsvex } = require("mdsvex")
+const svelteConfig = require("./svelte.config")
 
 const mode = process.env.NODE_ENV
 const dev = mode === "development"
@@ -17,12 +17,7 @@ const svelteRule = options => ({
   use: {
     loader: "svelte-loader",
     options: {
-      preprocess: [
-        mdsvex({
-          extension: ".svx",
-          smartypants: false, // causes parsing errors in inline js 🤔
-        }),
-      ],
+      preprocess: svelteConfig.preprocess,
       ...options,
     },
   },

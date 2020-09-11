@@ -1,0 +1,5 @@
+{
+  "javascript.suggestionActions.enabled": false,
+  "svelte.plugin.css.enable": false,
+  "css.validate": false
+}

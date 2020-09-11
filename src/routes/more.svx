@@ -1,0 +1,12 @@
+---
+title: More
+---
+
+<script>
+let clicked = false
+let handleClick = () => (clicked = !clicked)
+</script>
+
+# More?
+
+Everything is <span on:click={handleClick}>{clicked ? "👌" : "working"}</span>.

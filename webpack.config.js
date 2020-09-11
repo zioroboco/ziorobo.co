@@ -3,13 +3,30 @@ const WebpackModules = require("webpack-modules")
 const path = require("path")
 const config = require("sapper/config/webpack.js")
 const pkg = require("./package.json")
+const { mdsvex } = require("mdsvex")
 
 const mode = process.env.NODE_ENV
 const dev = mode === "development"
 
 const alias = { svelte: path.resolve("node_modules", "svelte") }
-const extensions = [".mjs", ".js", ".json", ".svelte", ".html"]
+const extensions = [".mjs", ".js", ".json", ".svelte", ".svx", ".html"]
 const mainFields = ["svelte", "module", "browser", "main"]
+
+const svelteRule = options => ({
+  test: /\.(svelte|svx|html)$/,
+  use: {
+    loader: "svelte-loader",
+    options: {
+      preprocess: [
+        mdsvex({
+          extension: ".svx",
+          smartypants: false, // causes parsing errors in inline js 🤔
+        }),
+      ],
+      ...options,
+    },
+  },
+})
 
 module.exports = {
   client: {
@@ -18,17 +35,11 @@ module.exports = {
     resolve: { alias, extensions, mainFields },
     module: {
       rules: [
-        {
-          test: /\.(svelte|html)$/,
-          use: {
-            loader: "svelte-loader",
-            options: {
-              dev,
-              hydratable: true,
-              hotReload: false,
-            },
-          },
-        },
+        svelteRule({
+          hydratable: true,
+          hotReload: false,
+          dev,
+        }),
       ],
     },
     mode,
@@ -49,18 +60,12 @@ module.exports = {
     externals: Object.keys(pkg.dependencies).concat("encoding"),
     module: {
       rules: [
-        {
-          test: /\.(svelte|html)$/,
-          use: {
-            loader: "svelte-loader",
-            options: {
-              css: false,
-              generate: "ssr",
-              hydratable: true,
-              dev,
-            },
-          },
-        },
+        svelteRule({
+          css: false,
+          generate: "ssr",
+          hydratable: true,
+          dev,
+        }),
       ],
     },
     mode,

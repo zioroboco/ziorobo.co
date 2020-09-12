@@ -3,7 +3,7 @@
     padding-top: 2em;
     display: flex;
     align-items: center;
-    @apply text-5xl;
+    @apply text-3xl;
   }
 
   header > * {

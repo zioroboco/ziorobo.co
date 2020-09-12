@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @apply text-5xl;
+    @apply text-3xl;
   }
 
   .github {

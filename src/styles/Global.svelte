@@ -13,7 +13,7 @@
   }
 
   p {
-    @apply my-4;
+    @apply my-4 text-justify;
     & > a {
       text-decoration: underline;
     }

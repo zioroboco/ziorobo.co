@@ -1,5 +1,9 @@
+<script>
+  import Post from "./posts/ding"
+</script>
+
 <svelte:head>
   <title>ziorobo.co</title>
 </svelte:head>
 
-<h1>Ding!</h1>
+<Post />

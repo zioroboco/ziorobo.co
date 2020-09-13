@@ -1,9 +1,17 @@
 <script>
-  import Post from "./posts/ding"
+  import Hello from "./posts/hello.svx"
 </script>
 
 <svelte:head>
   <title>ziorobo.co</title>
 </svelte:head>
 
-<Post />
+<Hello />
+
+<footer>
+  <hr />
+  <h1>other posts</h1>
+  <ul>
+    <li><a href="/posts/ding">ding</a></li>
+  </ul>
+</footer>

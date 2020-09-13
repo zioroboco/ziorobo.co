@@ -1,13 +1,7 @@
 <script>
+  export let slug
   export let title
   export let date
-
-  const { format } = new Intl.DateTimeFormat()
-
-  $: date = {
-    iso: date,
-    pretty: format(new Date(date)),
-  }
 </script>
 
 <style>
@@ -21,9 +15,9 @@
 </svelte:head>
 
 <article>
-  <h1><a href="/posts/{title}">{title}</a></h1>
+  <h1><a href="/posts/{slug}">{title}</a></h1>
   <slot />
   <footer>
-    {#if date}<time datetime={date.iso}>{date.pretty}</time>{/if}
+    {#if date}<time>{date}</time>{/if}
   </footer>
 </article>

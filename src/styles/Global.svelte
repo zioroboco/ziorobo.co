@@ -33,9 +33,10 @@
 
   p {
     @apply my-4 text-justify;
-    & > a {
-      text-decoration: underline;
-    }
+  }
+
+  a {
+    text-decoration: underline;
   }
 
   h1,
@@ -46,6 +47,9 @@
   h6 {
     @apply my-6;
     font-family: Exo, Yrsa, Georgia, Times New Roman, Times, serif;
+    & > a {
+      text-decoration: none;
+    }
   }
 
   h1 {
@@ -68,6 +72,17 @@
     margin-left: -1rem;
     padding-left: 0.65rem;
     border-left: 0.35rem solid;
+  }
+
+  ul {
+    @apply ml-8 list-disc;
+    & a {
+      text-decoration: underline;
+    }
+  }
+
+  hr {
+    @apply my-6;
   }
 
   /* Centre-align mathjax equations: */

@@ -1,0 +1,24 @@
+---
+title: 👋
+slug: hello
+date: 2020-9-13
+---
+
+<script>
+  let clicked = false
+  let handleClick = () => (clicked = !clicked)
+</script>
+
+Welcome to my corner of the internet!
+
+I'm Louis. I'm into technical user interfaces, science and spaceflight. My big language crushes at the moment are Typescript, Rust and Julia, and lately I've become interested in web-assembly.
+
+I don't post much, here or elsewhere. This site is just something for me to periodically rebuild whenever I get the bug. 😄
+
+Most recently I used Svelte! <span on:click={handleClick}>{clicked ? '💥' : '🧪'}</span> (← click me)
+
+Also check this out:
+
+$$\TeX$$
+
+[Source is on my GitHub.](https://github.com/zioroboco/ziorobo.co/blob/master/src/routes/posts/hello.svx) ✌️

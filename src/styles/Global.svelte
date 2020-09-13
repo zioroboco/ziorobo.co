@@ -1,3 +1,22 @@
+<script>
+  import { onMount } from "svelte"
+
+  onMount(() => {
+    let script = document.createElement("script")
+    script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+    document.head.append(script)
+
+    script.onload = () => {
+      MathJax = {
+        tex: {
+          inlineMath: [["\\$", "\\$"]],
+        },
+        svg: { fontCache: "global" },
+      }
+    }
+  })
+</script>
+
 <style global>
   body {
     @apply mx-auto;
@@ -49,5 +68,10 @@
     margin-left: -1rem;
     padding-left: 0.65rem;
     border-left: 0.35rem solid;
+  }
+
+  /* Centre-align mathjax equations: */
+  .MathJax > svg {
+    @apply mx-auto;
   }
 </style>

@@ -11,14 +11,12 @@ date: 2020-9-13
 
 Welcome to my corner of the internet!
 
-I'm Louis. I'm into technical user interfaces, science and spaceflight. My big language crushes at the moment are Typescript, Rust and Julia, and lately I've become interested in web-assembly.
+I don't post much, here or elsewhere. This is just something for me to periodically rebuild whenever I get the bug. 😄
 
-I don't post much, here or elsewhere. This site is just something for me to periodically rebuild whenever I get the bug. 😄
+Most recently I did so using Svelte! <button on:click={handleClick}>{clicked ? '💥' : '🧪'}</button> (← click me)
 
-Most recently I used Svelte! <span on:click={handleClick}>{clicked ? '💥' : '🧪'}</span> (← click me)
+And check this out:
 
-Also check this out:
-
-$$\TeX$$
+{"$$e^{iπ} = -1$$"}
 
 [Source is on my GitHub.](https://github.com/zioroboco/ziorobo.co/blob/master/src/routes/posts/hello.svx) ✌️

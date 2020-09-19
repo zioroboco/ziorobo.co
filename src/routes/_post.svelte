@@ -1,4 +1,9 @@
 <script>
+  import { onMount } from "svelte"
+  onMount(() => {
+    MathJax.typeset()
+  })
+
   export let slug
   export let title
   export let date

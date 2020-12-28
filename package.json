@@ -5,7 +5,7 @@
   },
   "scripts": {
     "sapper": "sapper --ext '.svelte .svx'",
-    "build": "NODE_ENV=production yarn -s sapper export --entry '/ 404 posts/ding'",
+    "build": "NODE_ENV=production yarn -s sapper export --entry '/ 404'",
     "dev": "NODE_ENV=development yarn -s sapper dev --port 8080 --no-hot"
   },
   "dependencies": {

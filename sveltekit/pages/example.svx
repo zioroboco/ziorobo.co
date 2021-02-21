@@ -1,0 +1,15 @@
+<script>
+  import Counter from "$components/Counter.svelte"
+</script>
+
+<style>
+  * {
+    color: red;
+  }
+</style>
+
+# Ding!
+
+I'm a svx document! 🤪
+
+<Counter/>

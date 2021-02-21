@@ -1,12 +1,15 @@
 const sveltePreprocess = require("svelte-preprocess")
+const { mdsvex } = require("mdsvex")
+
+const mdsvexConfig = {
+  extensions: [".md", ".svx"],
+}
 
 module.exports = {
-  preprocess: sveltePreprocess(),
-
+  extensions: [".svelte", ...mdsvexConfig.extensions],
+  preprocess: [sveltePreprocess(), mdsvex(mdsvexConfig)],
   kit: {
     adapter: "@sveltejs/adapter-node",
-
-    // hydrate the <div id="svelte"> element in src/app.html
     target: "#svelte",
   },
 }

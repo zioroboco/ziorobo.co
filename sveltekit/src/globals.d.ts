@@ -10,6 +10,14 @@
 declare module "*.svelte" {
   export { SvelteComponent as default } from "svelte"
 }
+
+declare module "*.svx" {
+  export { SvelteComponent as default } from "svelte"
+}
+
+declare module "*.md" {
+  export { SvelteComponent as default } from "svelte"
+}
 //#endregion
 
 //#region Ensure image file endings have a type for TypeScript

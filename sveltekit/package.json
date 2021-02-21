@@ -10,6 +10,7 @@
     "@sveltejs/adapter-node": "next",
     "@sveltejs/kit": "next",
     "@sveltejs/snowpack-config": "next",
+    "mdsvex": "^0.8.9",
     "svelte": "^3.29.0",
     "typescript": "^4.0.0",
     "tslib": "^2.0.0",

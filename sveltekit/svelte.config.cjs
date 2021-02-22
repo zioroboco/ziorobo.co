@@ -9,7 +9,7 @@ module.exports = {
   extensions: [".svelte", ...mdsvexConfig.extensions],
   preprocess: [sveltePreprocess(), mdsvex(mdsvexConfig)],
   kit: {
-    adapter: "@sveltejs/adapter-node",
+    adapter: "@sveltejs/adapter-static",
     target: "#svelte",
   },
 }

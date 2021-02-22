@@ -1,9 +1,19 @@
+<header>
+  <a class="avatar" href="/">
+    <img alt="avatar" src="favicon.png" />
+    <span>ziorobo.co</span>
+  </a>
+  <a class="github" href="https://github.com/zioroboco">
+    <img alt="github logo" src="github.svg" />
+  </a>
+</header>
+
 <style>
   header {
     padding-top: 2em;
     display: flex;
     align-items: center;
-    @apply text-3xl;
+    @apply text-4xl;
   }
 
   header > * {
@@ -32,13 +42,3 @@
     margin-left: auto;
   }
 </style>
-
-<header>
-  <a class="avatar" href="/">
-    <img alt="avatar" src="favicon.png" />
-    <span>ziorobo.co</span>
-  </a>
-  <a class="github" href="https://github.com/zioroboco">
-    <img alt="github logo" src="github.svg" />
-  </a>
-</header>

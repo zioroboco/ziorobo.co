@@ -1,4 +1,8 @@
 <style global>
+  html {
+    font-size: 20px;
+  }
+
   body {
     @apply mx-auto;
     max-width: 80vw;
@@ -7,7 +11,6 @@
       @apply max-w-lg;
     }
 
-    @apply text-base;
     font-family: Yrsa, Georgia, Times New Roman, Times, serif;
     line-height: 1.5em;
   }
@@ -34,7 +37,7 @@
   }
 
   h1 {
-    @apply text-xl;
+    @apply text-2xl;
   }
 
   h2 {

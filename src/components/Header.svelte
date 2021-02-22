@@ -10,7 +10,9 @@
 
 <style>
   header {
+    font-size: 2em;
     padding-top: 2em;
+    margin-bottom: 1em;
     display: flex;
     align-items: center;
     @apply text-4xl;

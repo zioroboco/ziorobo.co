@@ -3,11 +3,12 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
+    "build": "svelte-kit build && svelte-kit adapt",
     "start": "svelte-kit start"
   },
   "devDependencies": {
     "@sveltejs/adapter-node": "next",
+    "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
     "@sveltejs/snowpack-config": "next",
     "mdsvex": "^0.8.9",

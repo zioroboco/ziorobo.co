@@ -16,8 +16,10 @@ jobs:
           node-version: "14.15.x"
       - run: yarn install --frozen-lockfile
       - run: yarn build
+      - run: yarn build
+      - run: yarn build
       - run: cd __sapper__/export && ln -s 404/index.html 404.html; cd -
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./__sapper__/export
+          publish_dir: ./build

@@ -1,7 +1,7 @@
 <header>
   <a class="avatar" href="/">
     <img alt="avatar" src="favicon.png" />
-    <span>ziorobo.co</span>
+    <span>zioroboco</span>
   </a>
   <a class="github" href="https://github.com/zioroboco">
     <img alt="github logo" src="github.svg" />

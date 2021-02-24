@@ -1,5 +1,6 @@
 ---
 title: ding
+slug: ding
 date: 2018-5-10
 ---
 

@@ -11,7 +11,8 @@
       @apply max-w-lg;
     }
 
-    font-family: Yrsa, Georgia, Times New Roman, Times, serif;
+    font-family: Source Serif Pro, Georgia, Times New Roman, Times, serif;
+    font-weight: 400;
     line-height: 1.5em;
   }
 
@@ -30,7 +31,8 @@
   h5,
   h6 {
     @apply my-6;
-    font-family: Exo, Yrsa, Georgia, Times New Roman, Times, serif;
+    font-family: Exo, Source Serif Pro, Georgia, Times New Roman, Times, serif;
+    font-weight: 700;
     & > a {
       text-decoration: none;
     }

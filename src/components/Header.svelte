@@ -11,15 +11,14 @@
 <style>
   header {
     font-size: 2em;
-    padding-top: 2em;
-    margin-bottom: 1em;
+    padding-top: 3em;
+    margin-bottom: 1.5em;
     display: flex;
     align-items: center;
-    @apply text-4xl;
   }
 
-  header > * {
-    margin: 0;
+  header > a {
+    color: black;
   }
 
   .avatar {
@@ -39,8 +38,14 @@
   }
 
   .github {
-    margin-bottom: 0.1em;
+    margin-bottom: 0.05em;
     width: 0.75em;
     margin-left: auto;
+  }
+
+  .github:active,
+  .github:focus {
+    outline: 0;
+    border: none;
   }
 </style>

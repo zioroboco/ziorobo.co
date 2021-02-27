@@ -9,5 +9,3 @@ From [Akin's Laws of Spacecraft Design](https://spacecraft.ssl.umd.edu/akins_law
 > You can't get to the moon by climbing successively taller trees.
 
 🚀
-
-<time>2018-5-10</time>

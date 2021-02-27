@@ -2,6 +2,7 @@
   "name": "sveltekit",
   "version": "0.0.1",
   "scripts": {
+    "clean": "rm -rf build",
     "dev": "svelte-kit dev",
     "build": "svelte-kit build && svelte-kit adapt",
     "start": "svelte-kit start"

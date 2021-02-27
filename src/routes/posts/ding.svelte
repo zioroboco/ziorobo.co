@@ -2,4 +2,7 @@
   import Page from "$pages/ding.md"
 </script>
 
-<Page />
+<article>
+  <Page />
+  <time> 2018-5-10 </time>
+</article>

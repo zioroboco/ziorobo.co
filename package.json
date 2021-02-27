@@ -4,7 +4,7 @@
   "scripts": {
     "clean": "rm -rf build",
     "dev": "svelte-kit dev",
-    "build": "svelte-kit build && svelte-kit adapt",
+    "build": "svelte-kit build && svelte-kit adapt || true",
     "start": "svelte-kit start"
   },
   "devDependencies": {
